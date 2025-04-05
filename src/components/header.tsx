@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-
+import { CitySearch } from "./city-search";
+import { ThemeToggle } from "./theme-toggle";
 import { useTheme } from "@/context/theme-provider";
-import { Moon, Sun } from "lucide-react";
 
 export function Header() {
-  const { theme,setTheme } = useTheme();
-  const isDark = theme === "dark";
+  const { theme } = useTheme();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 py-2">
@@ -19,11 +18,8 @@ export function Header() {
         </Link>
 
         <div className="flex gap-4">
-            <div onClick={()=>setTheme(isDark? "light":"dark")}>
-                isDark? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />
-            </div>
-        
-          
+          <CitySearch />
+          <ThemeToggle />
         </div>
       </div>
     </header>
