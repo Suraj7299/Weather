@@ -10,9 +10,9 @@ import { MapPin, AlertTriangle, RefreshCw } from "lucide-react";
 import { useGeolocation } from "@/hooks/use-geolocation";
 import { WeatherDetails } from "../components/weather-details";
 import { WeatherForecast } from "../components/weather-forecast";
-import { HourlyTemperature } from "../components/hourly-temprature";
+import { HourlyTemperature } from "../components/hourly-temperature";
 import WeatherSkeleton from "../components/loading-skeleton";
-import { FavoriteCities } from "@/components/favorite-cities";
+import { FavoriteCities } from "../components/favorite-cities";
 
 export function WeatherDashboard() {
   const {
