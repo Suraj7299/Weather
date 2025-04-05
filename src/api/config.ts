@@ -7,3 +7,4 @@ export const API_CONFIG = {
     appid: import.meta.env.VITE_OPENWEATHER_API_KEY,
   },
 };
+ 
