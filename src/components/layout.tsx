@@ -10,7 +10,11 @@ export function Layout({ children }: PropsWithChildren) {
       </main>
       <footer className="border-t backdrop-blur supports-[backdrop-filter]:bg-background/60 py-12">
         <div className="container mx-auto px-4 text-center text-gray-200">
-          <p>Made by Energee</p>
+          <p className="">
+          <span className="text-xl text-bold text-muted-foreground italic tracking-wide">
+             Made by Energy
+          </span>
+          </p>
         </div>
       </footer>
     </div>
