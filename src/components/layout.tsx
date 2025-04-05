@@ -12,7 +12,7 @@ export function Layout({ children }: PropsWithChildren) {
         <div className="container mx-auto px-4 text-center text-gray-200">
           <p className="">
           <span className="text-xl text-bold text-muted-foreground italic tracking-wide">
-             Made by Energy
+             Made by Suraj Kumar
           </span>
           </p>
         </div>
